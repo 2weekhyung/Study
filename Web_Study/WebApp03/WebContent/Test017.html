@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Test017.html</title>
+
+<style type="text/css">
+
+*{background-color: Mintcream; font-size: 1em; margin: 0.5cm; font-family: 맑은 고딕;}
+
+h1{ font-size: 2.0em; color:#1AAB8A; text-align: center;}
+
+input.txtNum
+	{
+		width: 100px;
+		height: 30px;
+		text-align: right;
+		background-color: Ghostwhite;
+	}
+
+input.button{
+  background:#1AAB8A;
+  color:#fff;
+  border:none;
+  position:relative;
+  height:60px;
+  font-size:1.6em;
+  padding:0 2em;
+  cursor:pointer;
+  transition:800ms ease all;
+  outline:none;
+}
+input.button:hover{
+  background:#fff;
+  color:#1AAB8A;
+}
+input.button:before,input.button:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: #1AAB8A;
+  transition:400ms ease all;
+}
+input.button:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+input.button:hover:before,input.button:hover:after{
+  width:100%;
+  transition:800ms ease all;
+}
+</style>
+
+<script type="text/javascript">
+
+	function cal()
+	{
+		//alert("함수 호출 확인~!!!");
+		
+		var money = document.getElementById("inputMoney").value;
+		
+			totalMoney.value = money;
+			
+			coin500.value = parseInt(money/500);
+			money %= 500;
+			
+			coin100.value = parseInt(money/100);
+			money %= 100;
+			
+			coin50.value = parseInt(money/50);
+			money %= 50;
+			
+			coin10.value = parseInt(money/10);
+		
+		
+		
+	}
+
+</script>
+</head>
+<body>
+
+<!--
+	특정 금액(10 ~ 990원)을 사용자로부터 입력 받아
+	화폐 단위로 구분하여 출력하는 페이지를 구성한다.
+	화폐 단위는 편의상 오백원, 백원, 오십원, 십원으로 구분한다.
+	HTML, CSS, Javascript 를 활용한다.
+	
+	페이지 기본 레이아웃 구성
+	--------------------------------------------------------
+	
+	금액 [     ] 원
+	
+	<결과> <취소>
+	
+	총액	[] 원
+	오백원	[] 개
+	백원	[] 개
+	오십원	[] 개
+	십원	[] 개
+	
+	----------------------------------------------------------
+ -->
+
+<div>
+	<h1>자바스크립트 활용</h1>
+	<hr>
+</div>
+<br><br><br>
+
+<div>
+	<form action="">
+	금액  &nbsp;&nbsp;<input type="text" id="inputMoney" class="txtNum"> 원
+	<br><br>
+	
+	<input type="button" class="button" value="결과" onclick="cal()">
+	<input type="reset" class="button" value="취소">
+	<br><br>
+	
+	총액  &nbsp;&nbsp;&nbsp;<input type="text" id="totalMoney" class="txtNum" disabled="disabled"> 원 <br>
+	오백원 <input type="text" id="coin500" class="txtNum" disabled="disabled"> 개<br>
+	백원  &nbsp;&nbsp;&nbsp;<input type="text" id="coin100" class="txtNum" disabled="disabled"> 개<br>
+	오십원 <input type="text" id="coin50" class="txtNum" disabled="disabled"> 개<br>
+	십원  &nbsp;&nbsp;&nbsp;<input type="text" id="coin10" class="txtNum" disabled="disabled"> 개<br>
+	</form>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

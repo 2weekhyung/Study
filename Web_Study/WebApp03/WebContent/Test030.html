@@ -1,0 +1,130 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Test030.html</title>
+
+<style type="text/css">
+
+	*{text-align: left; background-color: #fffff0; color: #486C6C;}
+</style>
+
+</head>
+<body>
+
+<script type="text/javascript">
+
+	function choiceSize() 
+	{
+		//alert("확인~!!!");
+
+		var sizeArr = document.getElementsByName("radioGroup");
+		var size = 0;
+
+		for (var i = 0; i < sizeArr.length; i++)
+		{
+			if (sizeArr[i].checked)
+			{
+				size = sizeArr[i].value;
+			}
+		}
+
+		//alert(size);
+		return parseInt(size);
+	}
+
+	function choiceFlavor(obj) 
+	{
+		//alert("siuuuuuuuuu");
+
+		var size = choiceSize();
+
+		var num = 0;
+
+		if (size == 0) 
+		{
+			alert("사이즈를 먼저 선택해 주세요");
+			obj.checked = false;	
+			return;	
+		}
+
+		var checkArr = document.getElementsByName("checkGroup");
+
+		var choicedFlavor = 0;
+
+		for (var i = 0; i < checkArr.length; i++) 
+		{
+			if (checkArr[i].checked) 
+			{
+				choicedFlavor++;
+			}
+			
+		}
+
+		if (size < choicedFlavor) 
+		{
+			alert("사이즈 초과~!!!");
+			obj.checked = false;
+		}
+		
+	}
+
+</script>
+
+<div>
+	<h1>자바스크립트 활용</h1>
+	<hr>
+</div>
+
+<div>
+	<h2>아이스크림 주문</h2>
+	
+	<form>
+		--- 사이즈 선택 --- <br><br>
+		
+		<input type="radio" name="radioGroup" id="size1" value="1" onclick="choiceSize()"> 싱글
+		<input type="radio" name="radioGroup" id="size2" value="2" onclick="choiceSize()"> 더블
+		<input type="radio" name="radioGroup" id="size3" value="3" onclick="choiceSize()"> 파인트
+		<input type="radio" name="radioGroup" id="size4" value="4" onclick="choiceSize()"> 쿼터
+		<input type="radio" name="radioGroup" id="size5" value="5" onclick="choiceSize()"> 패밀리
+		<input type="radio" name="radioGroup" id="size6" value="6" onclick="choiceSize()"> 하프갤런
+		<br><br>
+		
+		
+		-- 종류 선택 -- <br><br>
+		
+		<input type="checkbox" name="checkGroup" id="flavor1" value="엄마는외계인" onclick="choiceFlavor(this)"> 엄마는외계인
+		<input type="checkbox" name="checkGroup" id="flavor2" value="레인보우샤베트" onclick="choiceFlavor(this)"> 레인보우샤베트
+		<input type="checkbox" name="checkGroup" id="flavor3" value="민트초코" onclick="choiceFlavor(this)"> 민트초코
+		<br>
+		
+		<input type="checkbox" name="checkGroup" id="flavor4" value="바람과함께사라지다" onclick="choiceFlavor(this)"> 바람과함께사라지다
+		<input type="checkbox" name="checkGroup" id="flavor5" value="애플민트" onclick="choiceFlavor(this)"> 애플민트
+		<input type="checkbox" name="checkGroup" id="flavor6" value="초코나무숲" onclick="choiceFlavor(this)"> 초코나무숲
+		<br>
+		
+		<input type="checkbox" name="checkGroup" id="flavor7" value="피스타치오아몬드" onclick="choiceFlavor(this)"> 피스타치오아몬드
+		<input type="checkbox" name="checkGroup" id="flavor8" value="아몬드봉봉" onclick="choiceFlavor(this)"> 아몬드봉봉
+		<input type="checkbox" name="checkGroup" id="flavor9" value="요거트31" onclick="choiceFlavor(this)"> 요거트31
+		<br>
+		
+		<input type="checkbox" name="checkGroup" id="flavor10" value="체리쥬빌레" onclick="choiceFlavor(this)"> 체리쥬빌레
+		<input type="checkbox" name="checkGroup" id="flavor11" value="슈팅스타" onclick="choiceFlavor(this)"> 슈팅스타
+		<input type="checkbox" name="checkGroup" id="flavor12" value="사랑에빠진딸기" onclick="choiceFlavor(this)"> 사랑에빠진딸기
+		<br>
+		
+		<input type="checkbox" name="checkGroup" id="flavor13" value="뉴욕치즈케이크" onclick="choiceFlavor(this)"> 뉴욕치즈케이크
+		<input type="checkbox" name="checkGroup" id="flavor14" value="쿠키 앤 크림" onclick="choiceFlavor(this)"> 쿠키 앤 크림
+		<input type="checkbox" name="checkGroup" id="flavor15" value="베리베리스트로베리" onclick="choiceFlavor(this)"> 베리베리스트로베리
+		<br>
+	
+	
+	
+	
+	</form>	
+	
+</div>
+
+</body>
+</html>
