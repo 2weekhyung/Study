@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<memList>
+	<!-- memList.xml -->
+	<memInfo mid="1">
+		<name>이주형</name>
+		<age>26</age>
+		<tel>010-1111-2222</tel>
+		<curriculumn>
+			<sub>JAVA SE</sub>
+			<sub>ORACLE</sub>
+			<sub><![CDATA[Servlet&JSP]]></sub>
+		</curriculumn>
+		<email><![CDATA[ljg@test.com]]></email>
+		<zipCode>12345</zipCode>
+		<add>경기도 화성시 </add>
+	</memInfo>
+	
+	<memInfo mid="2">
+		<name>임하성</name>
+		<age>30</age>
+		<tel>010-2222-3333</tel>
+		<curriculumn>
+			<sub>JAVA SE</sub>
+			<sub>ORACLE</sub>
+			<sub><![CDATA[Servlet&JSP]]></sub>
+		</curriculumn>
+		<email><![CDATA[lhs@test.com]]></email>
+		<zipCode>12346</zipCode>
+		<add>서울 중구 </add>
+	</memInfo>
+	
+	<memInfo mid="3">
+		<name>엄재용</name>
+		<age>32</age>
+		<tel>010-3333-4444</tel>
+		<curriculumn>
+			<sub>JAVA SE</sub>
+			<sub>ORACLE</sub>
+			<sub><![CDATA[Servlet&JSP]]></sub>
+		</curriculumn>
+		<email><![CDATA[ujw@test.com]]></email>
+		<zipCode>12347</zipCode>
+		<add>서울 관악구 </add>
+	</memInfo>
+	
+	<memInfo mid="4">
+		<name>문정환</name>
+		<age>26</age>
+		<tel>010-4444-5555</tel>
+		<curriculumn>
+			<sub>JAVA SE</sub>
+			<sub>ORACLE</sub>
+			<sub><![CDATA[Servlet&JSP]]></sub>
+		</curriculumn>
+		<email><![CDATA[mjh@test.com]]></email>
+		<zipCode>12348</zipCode>
+		<add>인천 남동구</add>
+	</memInfo>
+	
+	<memInfo mid="5">
+		<name>오수경</name>
+		<age>31</age>
+		<tel>010-5555-6666</tel>
+		<curriculumn>
+			<sub>JAVA SE</sub>
+			<sub>ORACLE</sub>
+			<sub><![CDATA[Servlet&JSP]]></sub>
+		</curriculumn>
+		<email><![CDATA[osg@test.com]]></email>
+		<zipCode>12349</zipCode>
+		<add>서울 중량구</add>
+	</memInfo>
+	
+	<memInfo mid="6">
+		<name>박나영</name>
+		<age>26</age>
+		<tel>010-6666-7777</tel>
+		<curriculumn>
+			<sub>JAVA SE</sub>
+			<sub>ORACLE</sub>
+			<sub><![CDATA[Servlet&JSP]]></sub>
+		</curriculumn>
+		<email><![CDATA[bny@test.com]]></email>
+		<zipCode>12350</zipCode>
+		<add>서울 신림</add>
+	</memInfo>
+</memList>
